@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Yodlr Registration Portal</title>
+  <link href="/css/output.css" rel="stylesheet">
+</head>
+<body class="bg-gray-200 min-h-screen flex items-center justify-center">
+  <div class="w-full max-w-md">
+    <div class="bg-white p-10 rounded-lg shadow-md text-center">
+      <h1 class="text-2xl mb-5">Yodlr Registration Portal</h1>
+      <form id="registration-form">
+        <div class="mb-4">
+          <label class="block text-gray-700 text-sm font-bold mb-2" for="firstName">
+            First Name:
+          </label>
+          <input class="shadow appearance-none border-2 border-gray-200 rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline focus:border-gray-300 mb-3" type="text" name="firstName" required>
+          <div class="text-red-500 text-xs italic" id="firstNameError"></div>
+        </div>        
+
+        <div class="mb-4">
+          <label class="block text-gray-700 text-sm font-bold mb-2" for="lastName">
+            Last Name:
+          </label>
+          <input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" type="text" name="lastName" required>
+          <div class="text-red-500 text-xs italic" id="lastNameError"></div>
+        </div>
+
+        <div class="mb-4">
+          <label class="block text-gray-700 text-sm font-bold mb-2" for="email">
+            Email:
+          </label>
+          <input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" type="email" name="email" required>
+          <div class="text-red-500 text-xs italic" id="emailError"></div>
+        </div>
+
+        <div class="mb-6">
+          <label class="block text-gray-700 text-sm font-bold mb-2" for="password">
+            Password:
+          </label>
+          <input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" type="password" name="password" required>
+          <div class="text-red-500 text-xs italic" id="passwordError"></div>
+        </div>
+
+        <div class="flex items-center justify-between">
+          <button id="submitBtn" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline" type="submit">
+            Submit
+          </button>
+          <button onclick="location.href='index.html'" class="inline-block align-baseline font-bold text-sm text-blue-500 hover:text-blue-800">
+            Back to Home
+          </button>
+        </div>
+      </form>
+    </div>
+  </div>
+  <script src="/js/signup.js"></script>
+</body>
+</html>
